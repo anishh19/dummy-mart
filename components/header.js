@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export function Header() {
     return (
-      <div className='flex justify-between py-3 text-xl bg-green-400 w-full'>
-          <h1>
+      <div className='flex justify-between py-3 text-xl bg-green-400 w-full p-4'>
+          <h1 className='p-1'>
               DummyMart
           </h1>
           <input className='w-3/5' ></input>
