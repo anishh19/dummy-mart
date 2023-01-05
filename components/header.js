@@ -1,13 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 
 export function Header() {
     return (
       <div className='flex justify-between py-3 text-xl bg-slate-600 w-full p-4 text-white'>
+          <Link href="/">
           <h1 className='p-1'>
               DummyMart
           </h1>
+          </Link>
           <div className='w-3/5 flex flex-row align-center justify-center p-3 bg-white'>
             <input className='w-5/6' type="text">        
             </input>
@@ -19,7 +22,7 @@ export function Header() {
           <h2> About </h2>
           <h2> Orders</h2>
           <div>
-          <Image width="50" height="50" alt="hi" id='cart' src='/cart-shopping-solid.svg'/>
+          <Image width="50" height="50" alt="cart" id='cart' src='/cart-shopping-solid.svg'/>
           </div>
       </div>
     )

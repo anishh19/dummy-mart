@@ -1,5 +1,6 @@
 import Header from "../../components/header";
 import ProductCard from "../../components/productCard";
+import Footer from "../../components/footer";
 
 function Products( {data} ) {
     return (
@@ -7,8 +8,9 @@ function Products( {data} ) {
         <Header/>
         <div className="grid  grid-cols-5 gap-10 p-4">
         {data.map((each)=>
-            <ProductCard {...each}/>)}
+            <ProductCard {...each} key={each.id} />)}
         </div>
+        <Footer/>
         </>
 
     )
