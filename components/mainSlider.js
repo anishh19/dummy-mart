@@ -76,7 +76,11 @@ function MainSlider() {
             </div>
         </div> 
         <div id="slide-3" className="h-full w-full absolute slide">
-            <div className="bg-red-300 h-1/3 w-full">
+            <div className="bg-red-300 h-1/3 w-full p-4 text-center flex justify-center gap-4">
+              <img className="w-1/4" src="/festival.png" alt="gifts"/>
+              <h2 className="text-red-800 w-1/4 py-8">
+                Get deals like never before this festive season.
+              </h2>                                               
             </div>
             <div className= "bg-gradient-to-b from-red-300 to-white h-2/3 w-full " >
             </div>
