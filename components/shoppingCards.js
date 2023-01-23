@@ -15,7 +15,7 @@ function ShoppingCards() {
           <div className="text-xl text-center p-4">Shop for latest smartphones</div>
           <img src="/phones.png"/>
         </Link>
-        <Link href="/produsts/44" className="bg-slate-200 h-64 col-span-2 rounded-lg p-4 flex justify-evenly">
+        <Link href="/products/44" className="bg-slate-200 h-64 col-span-2 rounded-lg p-4 flex justify-evenly">
           <div>
             <h1 className="py-4">
               Today's Deal
