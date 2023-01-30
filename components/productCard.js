@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { addToWishlist } from '../redux/wishList.slice';
+import { addToWishlist, removeFromWishlist } from '../redux/wishList.slice';
 // dispatch(addToWishlist(props))
 
 function ProductCard(props) {
@@ -10,7 +10,10 @@ function ProductCard(props) {
   let isInWishlist = wishList.find(each => each.id === props.id);
   const [isWished, changeStatus] =  useState(isInWishlist ? true : false);
   function toggleHeart(){
-    if(isWished){changeStatus(false)}
+    if(isWished){
+      changeStatus(false);
+      dispatch(removeFromWishlist(props));
+    }
     else {changeStatus(true); dispatch(addToWishlist(props));}
   }
   let button;

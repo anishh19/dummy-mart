@@ -6,7 +6,7 @@ function Wishlist() {
   return (
     <>
      <h1 className='p-10'>
-            Items in your wishList
+            Items in your Wishlist : 
         </h1>
     <div className='grid grid-cols-4 p-4 gap-2'>
        
