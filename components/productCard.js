@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { addToWishlist, removeFromWishlist } from '../redux/wishList.slice';
-// dispatch(addToWishlist(props))
+import Image from "next/image"
 
 function ProductCard(props) {
   const dispatch = useDispatch();
@@ -42,8 +42,14 @@ function ProductCard(props) {
 
     <div className="border-solid border-8 bg-gray-200" key={props.id}>
       <Link href={`/products/${encodeURIComponent(props.id)}`}>
-      <div className="h-28">
-        <img className="max-h-full" src= {props.thumbnail} alt= {props.title}/>
+      <div className="h-28 relative">
+        <Image 
+         
+        src= {props.thumbnail} 
+        alt= {props.title}
+        fill
+        className="object-contain"
+        />
       </div>
       <h3> {props.title}</h3>
       </Link>
