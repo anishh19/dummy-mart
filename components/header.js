@@ -1,18 +1,21 @@
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
-import { use, useEffect } from 'react';
+import { useState } from 'react';
 
 
 
 export function Header() {
   const cart = useSelector((state) => state.cart);
-  useEffect(()=>{
-    
-  },[])
 
   const getItemsCount = () => {
     return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
   };
+
+  const [query, setQuery] = useState("");
+
+  function handleChange(e){
+    setQuery(e.target.value);
+  }
 
     return (
       <div className='flex justify-between py-3 text-xl bg-gray-800 w-full p-5 text-white'>
@@ -22,13 +25,13 @@ export function Header() {
           </h1>
           </Link>
           <form className='w-2/5 h-12 flex flex-row align-center justify-between '>
-            <input className='grow text-black p-2 rounded-l-xl' type="text">        
+            <input onChange={handleChange} className='grow text-black p-2 rounded-l-xl' type="text" id='search'>        
             </input>
-            <button  className='w-12'>
+            <Link href={`/search/${query}`} className='w-12'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"  className='bg-white rounded-r-xl'>
               <path fillRule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clipRule="evenodd" />
             </svg> 
-            </button>
+            </Link>
           </form>
           <div className='flex justify-between w-32'>
           <Link href="/wishlist">
