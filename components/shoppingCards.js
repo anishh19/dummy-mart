@@ -1,7 +1,9 @@
 import Link from "next/link"
 
 function ShoppingCards() {
-  return (
+  return (<>
+    <div className="h-[15rem]">
+    </div>
     <div className=" w-full absolute top-[38vh] z-10 grid grid-cols-4 gap-4 p-4">
         <Link href="/products" className="bg-slate-200 h-64 rounded-lg flex flex-col justify-evenly items-center">
             <h2 className="text-center">
@@ -49,6 +51,7 @@ function ShoppingCards() {
         </Link>
 
     </div>
+    </>
   )
 }
 

@@ -42,7 +42,7 @@ function ProductCard(props) {
 
     <div className="border-solid border-8 bg-gray-200" key={props.id}>
       <Link href={`/products/${encodeURIComponent(props.id)}`}>
-      <div className="h-28 relative">
+      <div className="h-32 relative">
         <Image 
          
         src= {props.thumbnail} 
