@@ -18,7 +18,7 @@ export function Header() {
   }
 
     return (
-      <div className='flex justify-start md:justify-between md:py-3 text-xl gap-2 bg-gray-800 w-full py-4 pr-10 text-white'>
+      <div className='flex justify-start md:justify-between md:py-3 text-xl gap-2 bg-gray-800 w-full py-4 pr-16 text-white'>
           <Link href="/">
           <div className='p-1 text-2xl align-middle md:text-4xl'>
               DummyMart
