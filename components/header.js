@@ -18,14 +18,14 @@ export function Header() {
   }
 
     return (
-      <div className='flex justify-between md:py-3 text-xl gap-2 bg-gray-800 w-full p-4 text-white'>
+      <div className='flex justify-start md:justify-between md:py-3 text-xl gap-2 bg-gray-800 w-full py-4 pr-10 text-white'>
           <Link href="/">
           <div className='p-1 text-2xl align-middle md:text-4xl'>
               DummyMart
           </div>
           </Link>
           <form className='w-2/5 h-12 flex flex-row align-center justify-between '>
-            <input onChange={handleChange} className='w-24 md:grow text-black p-2 rounded-l-xl' type="text" id='search'>        
+            <input onChange={handleChange} className='w-24 grow text-black p-2 rounded-l-xl' type="text" id='search'>        
             </input>
             <Link href={`/search/${query}`} className='w-16'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"  className='bg-white w-12 rounded-r-xl'>
@@ -40,7 +40,7 @@ export function Header() {
           </svg>
           </Link>
           <Link href="/cart">
-            <div className='absolute top-0 right-1 md:right-4'>
+            <div className='absolute top-0 right-4'>
               {getItemsCount()}
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
