@@ -19,7 +19,7 @@ function Products( {data} ) {
 
     return (
         <>      
-        <div className="grid grid-cols-4 gap-10 p-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 p-10">
         
         {pageData.map((each)=>
             <ProductCard {...each} key={each.id} />)}

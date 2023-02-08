@@ -30,8 +30,8 @@ function Category() {
     <h1 className="p-10">
       View products according to categories:
     </h1>
-    <div className="grid grid-cols-4 gap-8 p-4">
-    {categories.map((each)=><Link className="hover:bg-slate-500 text-center p-4  " href={`/category/${each.split(" ").join("-").toLowerCase()}`}><h2>{each}</h2></Link>)}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-4">
+    {categories.map((each)=><Link className="hover:bg-slate-500 text-center p-4  " href={`/category/${each.split(" ").join("-").toLowerCase()}`}><div>{each}</div></Link>)}
     </div>
     </>
   )
