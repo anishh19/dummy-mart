@@ -15,21 +15,21 @@ function Cart() {
       );
     };
   return (
-    <div>
+    <div className='min-h-screen flex gap-2 justify-center flex-col'>
       {cart.map((each)=>
-            <div className='flex p-10 text-center items-center'>
+            <div className='flex p-5 text-center items-center text-lg bg-gray-300'>
               <div className='w-1/5'>
               <img className='max-h-32' src={each.thumbnail}></img>
               </div>
-              <h3 className='w-1/5'>{each.title}</h3>
-              <h3 className='w-1/5'>${Math.round(each.price-(each.price*each.discountPercentage*0.01))}</h3>
+              <div className='w-1/5'>{each.title}</div>
+              <div className='w-1/5'>${Math.round(each.price-(each.price*each.discountPercentage*0.01))}</div>
               <div className='flex w-1/5 justify-evenly '>
                 <button className='text-4xl'  onClick={()=>dispatch(decrementQuantity(each.id))}>-</button>
-                <h3>{each.quantity}</h3>
+                <div className='py-2'>{each.quantity}</div>
                 <button className='text-4xl' onClick={()=>dispatch(incrementQuantity(each.id))}>+</button>
               </div>
-              <h3 className='w-1/5'> ${Math.round(each.price-(each.price*each.discountPercentage*0.01))*each.quantity}
-                </h3>
+              <div className='w-1/5'> ${Math.round(each.price-(each.price*each.discountPercentage*0.01))*each.quantity}
+                </div>
             </div> )}
         <div className='text-4xl text-center p-10'>
           Cart Total : ${getTotalPrice()}

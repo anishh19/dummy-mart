@@ -10,6 +10,7 @@ function Products( {data} ) {
         const response=  await fetch(`https://dummyjson.com/products?limit=20&skip=${page*20}`)
         const productData = await response.json();
         changeData(productData.products);
+        if(page>0)
         window.scrollTo(0, 0);
     }
 
