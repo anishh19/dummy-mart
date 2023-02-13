@@ -137,7 +137,7 @@ function HomePageContent() {
         </div>
         
         <Link href="category/groceries" className="bg-slate-200 h-64 md:h-[30rem] rounded-lg flex justify-center items-center p-10 col-span-2 md:col-span-1">
-          <img className="object-contain md:p-4 p-10" src='/groceries.png'></img>
+          <img className="object-contain md:p-4 p-10" src='/Groceries.png'></img>
         </Link>
 
     </div>
