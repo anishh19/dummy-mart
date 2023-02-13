@@ -58,7 +58,7 @@ function HomePageContent() {
           </svg>
         </button>
         <div id="slide-1" className="h-56 w-full absolute slide">
-            <div className="h-56 bg-pink-800  w-full  text-center flex justify-center md:p-2 p-8">
+            <div className="h-56 bg-pink-800  w-full  text-center flex justify-center md:p-2 p-10">
               <img className="object-fill p-4 md:p-0" src="/cards.png" alt="cards"/>
               <div className="text-white w-1/4 md:text-3xl py-5">
                 Get flat 10% discount on Credit Cards.
@@ -67,7 +67,7 @@ function HomePageContent() {
         </div>
         <div id="slide-2" className="h-56 w-full absolute slide" >
             <div className="h-56 bg-rose-500 w-full flex justify-center gap-2 md:gap-10 flex-row p-10">
-              <div className="py-8">
+              <div>
                 <div className="text-white">
                   <div className="text-xl md:text-5xl text-center bold"> Up to 40% off</div>
                   <div className="text-center text-xl"> Laptops and Tablets</div>
@@ -79,14 +79,14 @@ function HomePageContent() {
                   <div className="relative h-8 w-8"><Image fill  alt="appleLogo" id='appleLogo' src="/Apple_logo.svg"/></div>        
                 </div>
               </div>
-              <div className="overflow-hidden w-1/3 relative pt-2">
+              <div className="overflow-hidden w-1/3 md:w-1/5  relative pt-2">
                   <Image fill alt="laptop" id='laptopImage' src="/laptops.png"/>
               </div>
             </div>
        
         </div> 
         <div id="slide-3" className="h-56 w-full absolute slide">
-            <div className=" h-56 bg-red-300 w-full p-4 text-center flex justify-center gap-4">
+            <div className=" h-56 bg-red-300 w-full py-6 px-10 text-center flex justify-center gap-4">
               <img className="object-contain" src="/festival.png" alt="gifts"/>
               <div className="text-red-800 text-lg md:text-4xl w-1/4 md:py-6">
                 Get deals like never before this festive season.
@@ -96,23 +96,23 @@ function HomePageContent() {
         <div className="w-full h-56"></div>
         <div className="gradientContainer w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
         <Link href="/products" className="bg-slate-200 h-40 md:h-64 rounded-lg flex flex-col justify-evenly items-center">
-            <div className="text-center">
+            <div className="text-center md:text-2xl">
               Show all products
             </div>
-            <div>
-              <img className="h-24 md:h-36" src="/shopping.png"/>
+            <div> 
+              <img className="h-24 md:h-40" src="/shopping.png"/>
           </div>
         </Link>
         <Link href="/category/smartphones" className="bg-slate-200 h-40 md:h-64 rounded-lg">
-          <div className=" text-sm md:text-xl text-center p-2 md:p-4">Shop for latest smartphones</div>
+          <div className=" text-sm md:text-2xl text-center p-2 md:p-4">Shop for latest smartphones</div>
           <img src="/phones.png"/>
         </Link>
-        <Link href="/products/4" className="bg-slate-200 h-48 md:h-64 col-span-2 rounded-lg p-4 flex justify-evenly">
+        <Link href="/products/4" className="bg-slate-200 h-48 md:h-64 col-span-2 rounded-lg p-2 flex justify-evenly">
           <div>
-            <div className="py-4 text-3xl">
+            <div className="py-4 text-3xl md:text-5xl">
               Today's Deal
             </div>
-            <div className="">
+            <div className="md:text-2xl">
               OPPO F1
             </div>
             <span className="text-5xl">$230 </span>
@@ -129,7 +129,7 @@ function HomePageContent() {
           </div>
         </Link>
         <div href=""  className="bg-slate-200 md:h-[30rem] rounded-lg p-4 grid grid-cols-2 gap-5">
-          <div className="md:text-xl text-center col-span-2">Upto 70% Off | Styles for Women</div>
+          <div className="md:text-2xl text-center col-span-2">Upto 70% Off | Styles for Women</div>
           <Link href="/category/womens-dresses" className="h-24 md:h-36 text-center "><img className="h-20 md:h-40 object-contain" src="https://i.dummyjson.com/data/products/44/thumbnail.jpg"/>Dresses</Link>
           <Link href="/category/womens-watches" className="h-24 md:h-36 text-center md:px-8"><img className="h-20 md:h-40 object-contain" src="https://i.dummyjson.com/data/products/70/thumbnail.jpg"/>Watches</Link>
           <Link href="/category/womens-shoes" className="h-24 md:h-36 text-center "><img className="h-20 md:h-40 object-contain" src="https://i.dummyjson.com/data/products/59/thumbnail.jpg"/>Shoes</Link>
@@ -137,7 +137,7 @@ function HomePageContent() {
         </div>
         
         <Link href="category/groceries" className="bg-slate-200 h-64 md:h-[30rem] rounded-lg flex justify-center items-center p-10 col-span-2 md:col-span-1">
-          <img className="object-contain p-10" src='/groceries.png'></img>
+          <img className="object-contain md:p-4 p-10" src='/groceries.png'></img>
         </Link>
 
     </div>
