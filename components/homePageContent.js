@@ -24,7 +24,8 @@ function HomePageContent() {
         gradientColor = red;
         break;
         };
-      gradientContainer.style.backgroundImage = `linear-gradient(${gradientColor}, white)`;
+      setTimeout(function(){gradientContainer.style.backgroundImage = `linear-gradient(${gradientColor}, white)`},500);
+      ;
       slides.forEach((slide)=> {
         slide.style.transform = `translate(${i*100}%)`
         i--;
@@ -57,7 +58,7 @@ function HomePageContent() {
           <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clipRule="evenodd" />
           </svg>
         </button>
-        <div id="slide-1" className="h-56 w-full absolute slide">
+        <div id="slide-1" className="h-56 w-full absolute slide transition-all ease-in-out duration-1000">
             <div className="h-56 bg-pink-800  w-full  text-center flex justify-center md:p-2 p-10">
               <img className="object-fill p-4 md:p-0" src="/cards.png" alt="cards"/>
               <div className="text-white w-1/4 md:text-3xl py-5">
@@ -65,7 +66,7 @@ function HomePageContent() {
               </div>
             </div>
         </div>
-        <div id="slide-2" className="h-56 w-full absolute slide" >
+        <div id="slide-2" className="h-56 w-full absolute slide transition-all ease-in-out duration-1000" >
             <div className="h-56 bg-rose-500 w-full flex justify-center gap-2 md:gap-10 flex-row p-10">
               <div>
                 <div className="text-white">
@@ -85,7 +86,7 @@ function HomePageContent() {
             </div>
        
         </div> 
-        <div id="slide-3" className="h-56 w-full absolute slide">
+        <div id="slide-3" className="h-56 w-full absolute slide transition-all ease-in-out duration-1000">
             <div className=" h-56 bg-red-300 w-full py-6 px-10 text-center flex justify-center gap-4">
               <img className="object-contain" src="/festival.png" alt="gifts"/>
               <div className="text-red-800 text-lg md:text-4xl w-1/4 md:py-6">
