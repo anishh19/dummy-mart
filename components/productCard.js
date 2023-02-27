@@ -40,7 +40,7 @@ function ProductCard(props) {
   
   return (
 
-    <div className="border-solid border-8 bg-gray-200" key={props.id}>
+    <div className="border-solid border-8 bg-gray-200 max-h-64" key={props.id}>
       <Link href={`/products/${encodeURIComponent(props.id)}`}>
       <div className="h-32 relative">
         <Image 

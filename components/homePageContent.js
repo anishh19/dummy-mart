@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 function HomePageContent() {
-  const [currentSlide, setSlider] = useState(0);
+  const [currentSlide, setSlider] = useState(2);
   useEffect(()=>{
       let i=currentSlide;
       const gradientContainer =document.querySelector(".gradientContainer");
@@ -89,7 +89,7 @@ function HomePageContent() {
         <div id="slide-3" className="h-56 w-full absolute slide transition-all ease-in-out duration-1000">
             <div className=" h-56 bg-red-300 w-full py-6 px-10 text-center flex justify-center gap-4">
               <img className="object-contain" src="/festival.png" alt="gifts"/>
-              <div className="text-red-800 text-lg md:text-4xl w-1/4 md:py-6">
+              <div className="text-red-800 text-base md:text-4xl w-1/4 md:py-6">
                 Get deals like never before this festive season.
               </div>                                               
             </div>
@@ -100,15 +100,15 @@ function HomePageContent() {
             <div className="text-center md:text-2xl">
               Show all products
             </div>
-            <div> 
+            <div className="p-2"> 
               <img className="h-24 md:h-40" src="/shopping.png"/>
           </div>
         </Link>
         <Link href="/category/smartphones" className="bg-slate-200 h-40 md:h-64 rounded-lg">
           <div className=" text-sm md:text-2xl text-center p-2 md:p-4">Shop for latest smartphones</div>
-          <img src="/phones.png"/>
+          <img src="/phones.png" className="p-4" />
         </Link>
-        <Link href="/products/4" className="bg-slate-200 h-48 md:h-64 col-span-2 rounded-lg p-2 flex justify-evenly">
+        <Link href="/products/4" className="bg-slate-200 h-48 md:h-64 col-span-2 rounded-lg p-4 flex justify-evenly">
           <div>
             <div className="py-4 text-3xl md:text-5xl">
               Today's Deal
@@ -116,7 +116,7 @@ function HomePageContent() {
             <div className="md:text-2xl">
               OPPO F1
             </div>
-            <span className="text-5xl">$230 </span>
+            <span className="text-3xl md:text-5xl">$230 </span>
             <s className="text-xl text-gray-500"> $280</s> <span className="text-green-500">18% off</span>
           </div>
           <div>
@@ -125,7 +125,7 @@ function HomePageContent() {
         </Link>
         <Link href="/category/furniture" className="bg-slate-200 md:h-[30rem] md:col-span-2 rounded-lg">
           <div className="text-2xl text-center p-4">Shop for Furniture</div>
-          <div className="py-10 md:px-28 ">
+          <div className="py-10 px-2 md:px-28 ">
             <img className="object-contained" src="/furniture.png"/>
           </div>
         </Link>
