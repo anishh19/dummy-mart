@@ -16,6 +16,9 @@ function Products( {data} ) {
 
     useEffect(()=>{
         fetchPage(page);
+        const navigators = document.querySelectorAll(".navigate-buttons");
+        navigators.forEach((each)=>each.style.backgroundColor = "white");
+        document.getElementById(`navigate-${page+1}`).style.backgroundColor = "rgb(226 232 240)";
     },[page])
 
     return (
@@ -27,7 +30,7 @@ function Products( {data} ) {
         </div>
         <div className="w-full flex gap-10 justify-center text-xl">
             {[1,2,3,4,5].map((each)=>
-            <button id={each} key={each} onClick={()=>changePage(each-1)} className="w-12 h-12 hover:bg-slate-200 ">{each}</button>
+            <button id={`navigate-${each}`} key={each} onClick={()=>changePage(each-1)} className="navigate-buttons w-12 h-12 rounded-xl">{each}</button>
             )}
         </div>
         <div className="w-full text-center text-xl py-4"> Page {page+1} of 5</div>
