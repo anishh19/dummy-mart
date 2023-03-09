@@ -4,17 +4,17 @@ import ProductCard from '../components/productCard';
 function Wishlist() {
     const wishList = useSelector((state) => state.wishList);
   return (
-    <>
-     <h1 className='p-10'>
+    <div className='h-screen'>
+     <div className='p-10 text-2xl md:text-4xl'>
             Items in your Wishlist : 
-        </h1>
-    <div className='grid grid-cols-4 p-4 gap-2'>
+        </div>
+    <div className='grid grid-cols-2 md:grid-cols-4 p-4 gap-2'>
        
         {wishList?.map((each)=>
             <ProductCard {...each} key={each.id} />)}
         
     </div>
-    </>
+    </div>
   )
 }
 
