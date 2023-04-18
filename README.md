@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Dummy Mart
 
-First, run the development server:
+Dummy Mart is a dummy ecommerce website that uses the DummyJSON API to generate dummy data for products. The website allows users to add products to their cart and wishlist, which are implemented using Redux Toolkit. The website is designed using Tailwind CSS and is optimized for performance using SSG (Static Site Generation) with Next.js. The website is deployed using Vercel and can be accessed at `https://dummy-mart.vercel.app/`.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Features
+
+- Browse and search for products on the website.
+- Add products to the cart and wishlist, which are implemented using Redux Toolkit.
+- Responsive design with optimized performance using SSG (Static Site Generation) with Next.js.
+- Designed using Tailwind CSS for a modern and visually appealing look.
+
+## Installation
+
+To install and run the website locally, follow these steps:
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/username/repo.git
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+4. Open `http://localhost:3000` in your web browser to view the website.
+
+## API Usage
+
+The website uses the [DummyJSON API](https://dummyjson.com/docs) to generate dummy data for products. The API provides a simple and easy-to-use interface for generating realistic dummy data.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or find a bug, please open an issue or submit a pull request.
+
+## Deployment
+
+The website is deployed using Vercel at `https://dummy-mart.vercel.app/`. Vercel provides a simple and easy-to-use platform for deploying and managing Next.js applications.
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
