@@ -16,7 +16,7 @@ function Products( {data} ) {
         <ImageSlider props={data.images} />
         <div className="p-4 flex flex-col h-full justify-between gap-6">
               <div className="text-4xl ">
-                <div className='py-1 text-3xl font-bold'><b>{data.title} </b></div>
+                <div className='py-1'><b>{data.title} </b></div>
                   <div className=" w-8 flex flex-row justify-center bg-green-500 text-sm text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-5 h-5">
                     <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
@@ -24,12 +24,12 @@ function Products( {data} ) {
                   {data.rating}
                   </div>
               </div>
-              <div className="text-lg"> 
+              <div className="md:text-2xl"> 
                 {data.description}
               </div>
               <div>
-                <span className="text-2xl font-bold text-green-500">${Math.round(data.price-(data.price*data.discountPercentage*0.01))} </span>
-                <s className="text-base line-through"> ${data.price}</s> <span className="text-base font-bold text-gray-500">{Math.round(data.discountPercentage)}% off</span>
+                <span className="text-6xl">${Math.round(data.price-(data.price*data.discountPercentage*0.01))} </span>
+                <s className="text-xl text-gray-500"> ${data.price}</s> <span className="text-green-500">{Math.round(data.discountPercentage)}% off</span>
               </div>
               <AddToCartButton data={data}/>
          </div>
